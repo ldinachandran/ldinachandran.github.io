@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Lekshmi Dinachandran — Profile & Portfolio</title>
+<meta name="description" content="Lekshmi Dinachandran: researcher, science communicator, academic editor, and bilingual writer based in New Zealand.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f4efe2;
+    --ink: #2b2620;
+    --muted: #6b6153;
+    --green: #1d5c3a;
+    --amber: #b05a1d;
+    --card: #faf6ec;
+    --rule: #cfc5ad;
+    --term-bg: #1e2420;
+    --term-fg: #b9d4c2;
+    --mono: 'IBM Plex Mono', 'Courier New', monospace;
+    --serif: 'Source Serif 4', Georgia, serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: var(--serif);
+    color: var(--ink);
+    line-height: 1.62;
+    background-color: var(--paper);
+    background-image:
+      linear-gradient(rgba(29,92,58,.055) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(29,92,58,.055) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .layout { display: flex; min-height: 100vh; }
+
+  /* ---------------- sidebar ---------------- */
+  aside {
+    flex: 0 0 300px;
+    background: var(--term-bg);
+    color: var(--term-fg);
+    font-family: var(--mono);
+    padding: 2rem 1.5rem 2.5rem;
+    position: sticky; top: 0; height: 100vh; overflow-y: auto;
+    border-right: 4px double var(--rule);
+  }
+  aside::-webkit-scrollbar { width: 6px; }
+  aside::-webkit-scrollbar-thumb { background: #3a453c; }
+  .side-dots { margin-bottom: 1.2rem; }
+  .side-dots span { width: 11px; height: 11px; border-radius: 50%; display: inline-block; margin-right: .35rem; }
+  .portrait {
+    background: var(--card); padding: .45rem .45rem 1.7rem;
+    border: 1px solid var(--rule); transform: rotate(-1.4deg);
+    width: 160px; margin: 0 0 1.3rem; position: relative;
+    box-shadow: 0 6px 16px rgba(0,0,0,.4);
+  }
+  .portrait img { width: 100%; height: 178px; object-fit: cover; display: block; filter: sepia(.14) contrast(1.02); }
+  .portrait figcaption { position: absolute; bottom: .3rem; left: 0; right: 0; text-align: center; font-size: .58rem; color: var(--muted); }
+  aside h1 { font-size: 1.25rem; font-weight: 600; color: #e8f3ea; margin: 0 0 .3rem; letter-spacing: .02em; }
+  .role { color: #d8b06a; font-size: .72rem; line-height: 1.6; margin-bottom: 1.1rem; }
+  .side-status { font-size: .68rem; color: #9db3a4; line-height: 1.8; border-top: 1px dashed #3a453c; border-bottom: 1px dashed #3a453c; padding: .7rem 0; margin-bottom: 1.1rem; }
+  .side-status .prompt { color: #7fae90; }
+  .cursor { display: inline-block; width: .5em; height: 1em; background: var(--term-fg); vertical-align: text-bottom; animation: blink 1.1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  nav a {
+    display: block; color: var(--term-fg); text-decoration: none;
+    font-size: .74rem; padding: .3rem .4rem; letter-spacing: .04em;
+  }
+  nav a::before { content: '> '; color: #7fae90; }
+  nav a:hover { background: #2c352e; color: #e8f3ea; }
+  .side-links { margin-top: 1.2rem; border-top: 1px dashed #3a453c; padding-top: .9rem; }
+  .side-links a { display: inline-block; color: #d8b06a; font-size: .68rem; margin: 0 .5rem .3rem 0; text-decoration: none; border-bottom: 1px dotted #d8b06a; }
+  .side-links a:hover { color: #e8f3ea; }
+  .side-contact { margin-top: 1rem; font-size: .64rem; color: #9db3a4; line-height: 1.8; }
+
+  /* ---------------- main ---------------- */
+  .content { flex: 1; min-width: 0; padding: 2.4rem 3rem 4rem; max-width: 54rem; }
+  section { margin-bottom: 3rem; }
+  h2 {
+    font-family: var(--mono); font-weight: 600;
+    font-size: .85rem; letter-spacing: .1em; color: var(--green); margin: 0 0 1.1rem;
+  }
+  h2::before { content: '// '; color: var(--amber); }
+  h2::after {
+    content: ''; display: block; margin-top: .45rem; height: 5px;
+    background-image: radial-gradient(var(--rule) 1.2px, transparent 1.3px);
+    background-size: 9px 5px; background-repeat: repeat-x;
+  }
+  .item {
+    background: var(--card); border: 1px solid var(--rule);
+    border-left: 4px solid var(--green);
+    padding: .9rem 1.1rem .8rem; margin-bottom: .9rem;
+    box-shadow: 3px 3px 0 rgba(207,197,173,.55);
+  }
+  .item.alt { border-left-color: var(--amber); }
+  .item h3 { margin: 0 0 .2rem; font-size: 1.05rem; font-weight: 600; }
+  .item h3 a { color: var(--ink); text-decoration: none; border-bottom: 1px dashed var(--green); }
+  .item h3 a:hover { color: var(--green); }
+  .meta { font-family: var(--mono); font-size: .67rem; color: var(--muted); letter-spacing: .03em; text-transform: uppercase; }
+  .item p { margin: .4rem 0 0; font-size: .94rem; color: #4c4437; }
+  .item p a { color: var(--green); }
+  .note { font-size: .85rem; font-style: italic; color: var(--muted); }
+  .lede { font-size: 1.05rem; }
+
+  /* CV timeline */
+  .tl { border-left: 2px solid var(--rule); margin-left: .4rem; padding-left: 1.3rem; }
+  .tl-item { position: relative; margin-bottom: 1.1rem; }
+  .tl-item::before {
+    content: ''; position: absolute; left: -1.68rem; top: .45rem;
+    width: 9px; height: 9px; background: var(--green); border: 2px solid var(--paper);
+    border-radius: 50%; box-shadow: 0 0 0 1px var(--rule);
+  }
+  .tl-item.alt::before { background: var(--amber); }
+  .tl-item h3 { margin: 0; font-size: 1rem; font-weight: 600; }
+  .tl-item p { margin: .2rem 0 0; font-size: .92rem; color: #4c4437; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2rem; }
+
+  footer {
+    border-top: 1px solid var(--rule); margin-top: 2rem; padding-top: 1.4rem;
+    font-family: var(--mono); font-size: .68rem; color: var(--muted); text-align: center;
+  }
+  footer a { color: var(--green); }
+
+  @media (max-width: 900px) {
+    .layout { flex-direction: column; }
+    aside { position: static; height: auto; flex: none; width: 100%; border-right: none; border-bottom: 4px double var(--rule); }
+    .portrait { margin: 0 auto 1.3rem; }
+    aside { text-align: center; }
+    nav { display: none; }
+    .content { padding: 1.8rem 1.25rem 3rem; }
+    .two-col { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+
+<aside>
+  <div class="side-dots">
+    <span style="background:#c25b4e"></span><span style="background:#d8b06a"></span><span style="background:#7fae90"></span>
+  </div>
+  <figure class="portrait">
+    <img src="../assets/portrait.jpg" alt="Lekshmi Dinachandran"
+         onerror="this.onerror=null;this.src='https://blogs.otago.ac.nz/honoka-hauwai/files/2023/09/Lekshmi-scaled.jpeg'">
+    <figcaption>fig. 1 — the author</figcaption>
+  </figure>
+  <h1>Lekshmi Dinachandran</h1>
+  <div class="role">Researcher · Science communicator · Academic editor · Bilingual writer (EN/ML)</div>
+  <div class="side-status">
+    <span class="prompt">$</span> status<br>
+    &gt; PhD defended 06/2026<br>
+    &gt; The MacDiarmid Institute<br>
+    &gt; open to: policy · research · teaching<span class="cursor"></span>
+  </div>
+  <nav>
+    <a href="#profile">profile</a>
+    <a href="#experience">experience</a>
+    <a href="#research">research</a>
+    <a href="#policy">policy_editing</a>
+    <a href="#books">books</a>
+    <a href="#teaching">teaching</a>
+    <a href="#essays">science_writing</a>
+    <a href="#malayalam">malayalam</a>
+    <a href="#media">media</a>
+    <a href="#editing">editing</a>
+  </nav>
+  <div class="side-links">
+    <a href="https://www.linkedin.com/in/leksdina/">linkedin</a>
+    <a href="https://medium.com/@ldinachandran">medium</a>
+    <a href="https://www.amazon.com/LEKSHMI-DINACHANDRAN-REMESH/e/B015DPIUGM">amazon</a>
+    <a href="https://blogs.otago.ac.nz/honoka-hauwai/students/">otago</a>
+  </div>
+  <div class="side-contact">
+    aotearoa new zealand<br>
+    ld.otagochem@gmail.com
+  </div>
+</aside>
+
+<div class="content">
+
+<section id="profile">
+  <h2>PROFILE</h2>
+  <p class="lede">I connect research, teaching, and public policy — turning complex technical material into things people can use: clear advice, good courses, readable writing.</p>
+  <p>My PhD in computational materials science (University of Otago, thesis defended June 2026) applied DFT and CALPHAD modelling to solid-state hydrogen storage under the MBIE–BMBF funded German–NZ Green Hydrogen Centre. Before that, I spent a decade teaching undergraduate engineering in India and seven years in scientific publishing — including editing the complete working-group report series (60+ reports) behind Kerala's 14th Five Year Plan. I write features for <em>Chemistry in New Zealand</em>, review books for the <em>Otago Daily Times</em>, and broadcast in Malayalam.</p>
+</section>
+
+<section id="experience">
+  <h2>EXPERIENCE</h2>
+  <div class="tl">
+    <div class="tl-item">
+      <h3>Research Assistant — The MacDiarmid Institute <span class="meta">· May 2026–present</span></h3>
+      <p>Science outreach kits for schools and public engagement; documentation across partner organisations.</p>
+    </div>
+    <div class="tl-item">
+      <h3>Doctoral Researcher (MBIE Scholarship) — University of Otago <span class="meta">· 2023–2026</span></h3>
+      <p>Computational modelling of hydrogen storage. Published in Acta Materialia; submitted the 5-millionth job on NZ's national HPC platform. Lab demonstrator (CHEM 111/191) and chemistry outreach, 2023–present.</p>
+    </div>
+    <div class="tl-item alt">
+      <h3>Editor, 14th Five Year Plan Working Group Reports — Kerala State Planning Board <span class="meta">· 2021–2022</span></h3>
+      <p>Edited the complete 60+ report series underpinning the state's five-year plan.</p>
+    </div>
+    <div class="tl-item alt">
+      <h3>Research Associate — 5 Elements Sustainable Development Group, Zurich <span class="meta">· 2021</span></h3>
+      <p>Policy research reports on climate change, migration and labour, and gender justice.</p>
+    </div>
+    <div class="tl-item">
+      <h3>Science Writing Consultant &amp; Co-founder, Ridhima Publications <span class="meta">· 2015–2023</span></h3>
+      <p>Edited 2,000+ STEM manuscripts and 12 books; built a publishing start-up whose materials reached 140+ institutions.</p>
+    </div>
+    <div class="tl-item">
+      <h3>Lecturer / Assistant Professor — University of Kerala <span class="meta">· 2006–2016</span></h3>
+      <p>Undergraduate engineering: mechanics, thermofluids, materials, programming, numerical methods.</p>
+    </div>
+  </div>
+  <div class="two-col" style="margin-top:1.4rem">
+    <div>
+      <h2>EDUCATION</h2>
+      <div class="tl">
+        <div class="tl-item"><h3>PhD, Computational Chemistry <span class="meta">· Otago · 2026</span></h3></div>
+        <div class="tl-item"><h3>M.Tech, Mechanical Engineering <span class="meta">· Kerala · 2014</span></h3></div>
+        <div class="tl-item"><h3>B.Tech, Mechanical Engineering <span class="meta">· Kerala · 2006</span></h3></div>
+      </div>
+    </div>
+    <div>
+      <h2>AWARDS</h2>
+      <div class="tl">
+        <div class="tl-item alt"><h3>Student Presentation Award <span class="meta">· NZ Hydrogen Symposium 2025</span></h3></div>
+        <div class="tl-item alt"><h3>MBIE Doctoral Scholarship <span class="meta">· 2023</span></h3></div>
+        <div class="tl-item alt"><h3>GATE top-performance scholarship <span class="meta">· Govt of India · 2014</span></h3></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <h2>RESEARCH &amp; ACADEMIC PUBLICATIONS</h2>
+  <div class="item">
+    <h3><a href="https://www.sciencedirect.com/science/article/abs/pii/S1359645425008006">Predicting hydrogen storage capacity loss of FeTi by ab initio thermodynamic modelling of Fe–Ti–Si phase equilibria</a></h3>
+    <div class="meta">Acta Materialia · Vol. 301, 121514 · 2025 · with Alvares, Sellschopp, Klassen, Jerabek &amp; Garden · <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5252958">preprint</a></div>
+    <p>First-principles thermodynamic modelling showing how silicon impurities from ilmenite-derived and recycled-steel feedstocks reduce the hydrogen storage capacity of FeTi alloys.</p>
+  </div>
+  <div class="item">
+    <h3><a href="https://scholar.google.com/scholar?q=Dinachandran+Gopinathan+wall+strain+metal+hydride+hydrogen+storage">Numerical simulation of wall strain distribution in a vertically placed metal hydride hydrogen storage container</a></h3>
+    <div class="meta">International Journal of Hydrogen Energy · 40, 5689–5700 · 2015 · with M. Gopinathan</div>
+    <p>Parametric study of wall strains in LaNi₅ hydride storage vessels across charge–discharge cycles.</p>
+  </div>
+  <div class="item">
+    <h3><a href="https://blogs.otago.ac.nz/honoka-hauwai/students/">PhD research — He Honoka Hauwai | German–NZ Green Hydrogen Centre</a></h3>
+    <div class="meta">University of Otago &amp; Helmholtz-Zentrum Hereon · 2023–2026 · thesis defended June 2026</div>
+    <p>MBIE (NZ)–BMBF (Germany) programme "Safe, low-cost hydrogen storage materials from NZ resources". Supervised by A/Prof Anna Garden (Otago) and Dr Paul Jerabek (Hereon).</p>
+  </div>
+</section>
+
+<section id="policy">
+  <h2>POLICY EDITING — GOVERNMENT OF KERALA</h2>
+  <div class="item alt">
+    <h3><a href="https://spb.kerala.gov.in/en/working-group-reports-2/">Working Group Reports, 14th Five Year Plan (2022–27)</a></h3>
+    <div class="meta">Kerala State Planning Board · Editor for the full series (60+ published reports) · documentation available on request</div>
+    <p>Edited the complete set of expert working group reports underpinning Kerala's 14th Five Year Plan — policy analysis and recommendations across agriculture, fisheries, environment, energy, industry, IT, transport, tourism, education, health, social security, gender, disaster management, e-governance, and decentralised planning.</p>
+    <p class="note">Representative reports:
+      <a href="https://spb.kerala.gov.in/sites/default/files/inline-files/Energy%20-WG%20report.pdf">Energy</a> ·
+      <a href="https://spb.kerala.gov.in/sites/default/files/inline-files/Layout-S%26T%20%283%29.pdf">Science &amp; Technology</a> ·
+      <a href="https://spb.kerala.gov.in/sites/default/files/inline-files/Knowledge%20Economy%2CEmployment%20and%20Skills-CDIT-FINAL.pdf">Knowledge Economy, Employment &amp; Skills</a> ·
+      <a href="https://spb.kerala.gov.in/sites/default/files/inline-files/Higher%20and%20Technical%20Education.pdf">Higher &amp; Technical Education</a> ·
+      <a href="https://spb.kerala.gov.in/sites/default/files/inline-files/Gender%20and%20Development%20Final.pdf">Gender &amp; Development</a> ·
+      <a href="https://spb.kerala.gov.in/sites/default/files/inline-files/Working%20Group%20Report%20on%20Decentralised%20Planning%20Process.pdf">Decentralised Planning</a>
+    </p>
+  </div>
+  <div class="item alt">
+    <h3>Policy research reports — 5 Elements Sustainable Development Group, Zurich</h3>
+    <div class="meta">Research Associate (remote) · 2021</div>
+    <p>In-depth reports on gender justice, migration and labour, and climate change — evidence synthesis into clear analysis and recommendations for non-specialist audiences.</p>
+  </div>
+</section>
+
+<section id="books">
+  <h2>BOOKS</h2>
+  <div class="item">
+    <h3><a href="https://play.google.com/store/books/details/INTRODUCTION_TO_SUSTAINABLE_ENGINEERING?id=loJBCgAAQBAJ">Introduction to Sustainable Engineering</a> <span class="meta">(co-author, with R. L. Rag)</span></h3>
+    <div class="meta">PHI Learning · 1st edition 2015 · <a href="https://books.google.com/books/about/INTRODUCTION_TO_SUSTAINABLE_ENGINEERING.html?id=FWWiDAAAQBAJ">2nd edition</a> 2016</div>
+    <p>Undergraduate engineering textbook covering environment-related legislation, pollution, waste management, and climate change.</p>
+  </div>
+  <div class="item">
+    <h3><em>Introduction to Life Skills</em></h3>
+    <div class="meta">Bookfinity Publications · 2021 · author</div>
+    <p>A guide for undergraduate students on communication, critical thinking, and personal effectiveness.</p>
+  </div>
+</section>
+
+<section id="teaching">
+  <h2>TEACHING &amp; COURSE MATERIALS</h2>
+  <div class="item">
+    <h3>Tertiary STEM educator — 10+ years</h3>
+    <div class="meta">University of Kerala (2006–16) · University of Otago labs &amp; outreach (2023–present)</div>
+    <p>A decade of undergraduate engineering teaching — designing lecture notes, problem sets, lab manuals, and assessments from scratch, and running bridging programmes for under-prepared students. Currently lead first-year chemistry labs (CHEM 111/191) and contribute to the Chemistry Outreach Team at Otago.</p>
+  </div>
+  <div class="item">
+    <h3>Sample course materials</h3>
+    <div class="meta">Developed for undergraduate engineering · Ridhima Publications materials adopted by 140+ institutions</div>
+    <p>Engineering mechanics — draft course notes written for undergraduate tutoring:
+      <a href="../teaching/engineering-mechanics-ch1.pdf">Fundamentals &amp; dynamics</a> ·
+      <a href="../teaching/engineering-mechanics-ch2.pdf">Dynamics</a> ·
+      <a href="../teaching/engineering-mechanics-ch3.pdf">Friction</a> ·
+      <a href="../teaching/engineering-mechanics-ch4.pdf">Centre of gravity &amp; moment of inertia</a><br>
+      <em>Dynamics of Machines</em>: <a href="../teaching/dynamics-of-machines-notes.pdf">Static force analysis — course notes</a></p>
+  </div>
+</section>
+
+<section id="essays">
+  <h2>SCIENCE WRITING, ESSAYS &amp; BOOK REVIEWS — ENGLISH</h2>
+  <div class="item">
+    <h3><a href="https://www.cinz.nz/posts/density-functional-theory---smushing-imaginary-atoms-effectively-since-1965">Density Functional Theory — Smushing Imaginary Atoms Effectively Since 1965</a></h3>
+    <div class="meta">Chemistry in New Zealand · NZ Institute of Chemistry · 2024 · feature article</div>
+    <p>A long-form history of atomic theory — from pañcabhūta and Democritus to Kohn–Sham equations.</p>
+  </div>
+  <div class="item">
+    <h3><a href="https://medium.com/@ldinachandran/gets-you-from-a-to-b-leaves-you-there-81d5d697f546">Gets You from A to B; Leaves You There!</a></h3>
+    <div class="meta">Medium · Sep 2025 · on Emma Holten's <em>Deficit</em></div>
+  </div>
+  <div class="item">
+    <h3><a href="https://medium.com/@ldinachandran/the-genetic-book-of-the-dead-a-farewell-full-of-familiar-notes-6144109565a1">The Genetic Book of the Dead: A Farewell Full of Familiar Notes</a></h3>
+    <div class="meta">Medium · Apr 2025 · on Richard Dawkins</div>
+  </div>
+  <div class="item">
+    <h3><a href="https://medium.com/@ldinachandran/ikebana-and-the-possibilities-of-mortality-7542f504b5c4">Ikebana and the Possibilities of Mortality</a></h3>
+    <div class="meta">Medium · Nov 2024 · on Oliver Burkeman's <em>Meditations for Mortals</em></div>
+  </div>
+  <div class="item">
+    <h3><a href="https://medium.com/@ldinachandran/indians-in-new-zealand-reclaiming-a-few-unnamed-brown-skinned-travellers-from-history-02a7243939e2">Indians in New Zealand: Reclaiming a Few Unnamed Brown-Skinned Travellers from History</a></h3>
+    <div class="meta">Medium · May 2024 · historical essay · self-translated from the Malayalam original</div>
+  </div>
+  <div class="item">
+    <h3><a href="https://medium.com/@ldinachandran/dont-worry-48-lessons-on-achieving-calm-72939afca262">Don't Worry: 48 Lessons on Achieving Calm</a></h3>
+    <div class="meta">Medium · Sep 2023 · on Shunmyō Masuno</div>
+  </div>
+  <div class="item">
+    <h3><a href="https://medium.com/@ldinachandran/anagramming-grief-wednesdays-child-yiyun-li-s-new-collection-of-short-fiction-993179f5f65b">Anagramming Grief — Wednesday's Child</a></h3>
+    <div class="meta">Medium · Sep 2023 · on Yiyun Li's short fiction</div>
+  </div>
+  <div class="item">
+    <h3><a href="https://medium.com/@ldinachandran/reshaping-silence-three-women-writers-who-pushed-literary-frontiers-this-year-a8f2fc38ff86">Reshaping Silence: Three Women Writers Who Pushed Literary Frontiers This Year</a></h3>
+    <div class="meta">Medium · Jul 2023</div>
+  </div>
+</section>
+
+<section id="malayalam">
+  <h2>MALAYALAM WRITING &amp; TRANSLATION</h2>
+  <div class="item alt">
+    <h3>Translation — <em>Citizenship and the Citizenship Act</em> (Dr. Shiju Khan)</h3>
+    <div class="meta">Mythri Books · 2020 · book translation</div>
+    <p>Translated this examination of Indian citizenship law — first full-length book translation.</p>
+  </div>
+  <div class="item alt">
+    <h3><a href="https://www.newindianexpress.com/cities/kochi/2025/Jan/27/walk-with-gandhi-an-exhibition-exploring-the-mahatmas-final-years">Poetry translation — "You I Could Not Save, Walk With Me" exhibition</a></h3>
+    <div class="meta">Durbar Hall, Kochi · Kerala Lalithakala Akademi · Jan–Feb 2025</div>
+    <p>English translations of P. N. Gopikrishnan's poetry, featured in the exhibition on Gandhi's final years, curated by Murali Cheeroth.</p>
+  </div>
+  <div class="item alt">
+    <h3><a href="https://www.deshabhimani.com/authors/%E0%B4%B2%E0%B4%95%E0%B5%8D%E0%B4%B7%E0%B5%8D%E2%80%8C%E0%B4%AE%E0%B4%BF+%E0%B4%A6%E0%B4%BF%E0%B4%A8%E0%B4%9A%E0%B4%A8%E0%B5%8D%E0%B4%A6%E0%B5%8D%E0%B4%B0%E0%B5%BB">Contributor — Deshabhimani</a></h3>
+    <div class="meta">Author page · Malayalam daily, Kerala</div>
+    <p>Articles for one of Kerala's major Malayalam newspapers, including the original of the "Indians in New Zealand" essay.</p>
+  </div>
+  <div class="item alt">
+    <h3><a href="https://medium.com/@ldinachandran/%E0%B4%85%E0%B4%AA%E0%B4%95%E0%B4%9F%E0%B4%82-%E0%B4%AA%E0%B4%A4%E0%B4%BF%E0%B4%AF%E0%B4%BF%E0%B4%B0%E0%B4%BF%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%81%E0%B4%A8%E0%B5%8D%E0%B4%A8-%E0%B4%92%E0%B4%B0%E0%B5%81-%E0%B4%AA%E0%B5%81%E0%B4%B8%E0%B5%8D%E0%B4%A4%E0%B4%95%E0%B4%82-%E0%B4%8E%E0%B4%B8%E0%B5%8D-%E0%B4%B9%E0%B4%B0%E0%B5%80%E0%B4%B7%E0%B4%BF%E0%B4%A8%E0%B5%8D%E0%B4%B1%E0%B5%86-%E0%B4%A8%E0%B5%8B%E0%B4%B5%E0%B5%BD-%E0%B4%86%E0%B4%97%E0%B4%B8%E0%B5%8D%E0%B4%B1%E0%B4%B1%E0%B5%8D-17-e36157ff3d75">അപകടം പതിയിരിക്കുന്ന ഒരു പുസ്തകം — 'ആഗസ്റ്റ് 17'</a></h3>
+    <div class="meta">Medium · Sep 2023 · on S. Hareesh's novel <em>August 17</em></div>
+  </div>
+  <div class="item alt">
+    <h3><a href="https://medium.com/@ldinachandran/%E0%B4%97%E0%B4%B0%E0%B4%BF%E0%B4%B8%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B4%BE-%E0%B4%85%E0%B4%B0%E0%B5%81%E0%B4%B5%E0%B4%BF-%E0%B4%92%E0%B4%B0%E0%B5%81-%E0%B4%AA%E0%B4%B0%E0%B4%BF%E0%B4%9A%E0%B4%AF%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B5%86%E0%B4%9F%E0%B5%81%E0%B4%A4%E0%B5%8D%E0%B4%A4%E0%B5%BD-87fe845eb0a5">'ഗരിസപ്പാ അരുവി' — ഒരു പരിചയപ്പെടുത്തൽ</a></h3>
+    <div class="meta">Medium · Jul 2023 · on V. Shinilal's short story collection</div>
+  </div>
+</section>
+
+<section id="media">
+  <h2>MEDIA, BROADCAST &amp; FEATURES</h2>
+  <div class="item">
+    <h3><a href="https://www.youtube.com/watch?v=Q-wH1MjMCb8">The Science Notes Podcast — "Can sand help run your car?"</a></h3>
+    <div class="meta">Podcast guest · with Dr. Dave</div>
+    <p>On hydrogen storage materials and green energy research, explained for a general audience.</p>
+  </div>
+  <div class="item">
+    <h3>Book reviews — Otago Daily Times</h3>
+    <div class="meta">2025–26 · print edition</div>
+    <p>Reviews including Arundhati Roy's <em>Mother Mary Comes to Me</em>, Sam Dalrymple's <em>Shattered Lands</em>, Richard Dawkins' <em>The Genetic Book of the Dead</em>, <em>Feathers of Aotearoa</em> (Niels Meyer-Westfield), and <em>The Secret Life of Fungi</em>.</p>
+  </div>
+  <div class="item">
+    <h3>On-air book reviewer — BookPick, Deshabhimani Online</h3>
+    <div class="meta">Video book review programme · Malayalam · 2022–23</div>
+    <p>Episodes:
+      <a href="https://www.youtube.com/watch?v=Y4AS3KhDxxo"><em>Invisible Empire</em> (Pranay Lal)</a> ·
+      <a href="https://www.youtube.com/watch?v=O2hYkr3GZ8w"><em>Tomb of Sand</em> (Geetanjali Shree)</a> ·
+      <a href="https://www.youtube.com/watch?v=il0bJtX_TqU"><em>Nights of Plague</em> (Orhan Pamuk)</a> ·
+      <a href="https://www.youtube.com/watch?v=x692X0McURQ"><em>Chats with the Dead</em> (Shehan Karunatilaka)</a> ·
+      <a href="https://www.youtube.com/watch?v=SnUoZ0dJxBQ"><em>The Little Prince</em> &amp; <em>The Room on the Roof</em></a> ·
+      <a href="https://www.youtube.com/watch?v=x4DHPiVUDRY">Favourite books of the year</a> ·
+      <a href="https://www.youtube.com/watch?v=lHIjX-ds6tE">part 2</a></p>
+  </div>
+  <div class="item">
+    <h3><a href="https://www.youtube.com/watch?v=aL7LbAwMnp8">COVID-19 public awareness explainer</a></h3>
+    <div class="meta">UPFRONT STORIES · Malayalam · 2020 · on-camera presenter</div>
+    <p>Public-health science communication during the pandemic's first wave.</p>
+  </div>
+  <div class="item">
+    <h3><a href="https://www.reannz.co.nz/case-studies/using-nanoscale-science-to-unlock-new-approaches-for-storing-hydrogen-as-a-fuel-alternative">Featured — REANNZ case study</a></h3>
+    <div class="meta">REANNZ (NZ's national research network) · 2026</div>
+    <p>Profiled after submitting the 5-millionth job on Mahuika, New Zealand's national HPC platform.</p>
+  </div>
+</section>
+
+<section id="editing">
+  <h2>EDITING &amp; SCIENCE COMMUNICATION</h2>
+  <div class="item">
+    <h3>Science Editor — freelance</h3>
+    <div class="meta">2016–2023 · 7 years</div>
+    <p>All levels of editing for journal articles, theses, books, and government policy reports. Worked with Cactus Communications (Elsevier, Wiley, Springer Nature, Taylor &amp; Francis), Enago (IEEE, RSC, ASME), Wordvice, and UniEdit. Profiles: <a href="https://reedsy.com/lekshmi-dinachandran">Reedsy</a> · <a href="https://about.me/l.remesh">about.me</a>.</p>
+  </div>
+  <div class="item">
+    <h3>Co-founder — Ridhima Publications</h3>
+    <div class="meta">2016–2020 · Thiruvananthapuram</div>
+    <p>Built and ran a start-up publishing and author-services venture focused on STEM textbooks, managing the full publication process from acquisition to marketing.</p>
+  </div>
+</section>
+
+<footer>
+  <div>lekshmi dinachandran · aotearoa new zealand · <a href="https://www.linkedin.com/in/leksdina/">linkedin/leksdina</a></div>
+  <div style="margin-top:.4rem">— compiled with care · build 2026-07-09 · v2.0-beta · no atoms were harmed, only smushed —</div>
+</footer>
+
+</div>
+</div>
+</body>
+</html>
