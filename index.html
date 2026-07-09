@@ -120,6 +120,12 @@
     font-family: var(--mono); font-size: .55rem; color: var(--muted);
   }
 
+  /* courses */
+  .courses { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 2rem; margin-top: .8rem; }
+  .courses h4 { font-family: var(--mono); font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; color: var(--amber); margin: 0 0 .35rem; border-bottom: 1px dotted var(--rule); padding-bottom: .25rem; }
+  .courses ul { list-style: none; margin: 0; padding: 0; font-family: var(--mono); font-size: .78rem; line-height: 1.9; color: #4c4437; }
+  .courses .code { color: var(--green); display: inline-block; min-width: 5.4em; }
+
   /* CV timeline */
   .tl { border-left: 2px solid var(--rule); margin-left: .4rem; padding-left: 1.3rem; }
   .tl-item { position: relative; margin-bottom: 1.1rem; }
@@ -140,6 +146,7 @@
   footer a { color: var(--green); }
 
   @media (max-width: 900px) {
+    .courses { grid-template-columns: 1fr; }
     .layout { flex-direction: column; }
     aside { position: static; height: auto; flex: none; width: 100%; border-right: none; border-bottom: 4px double var(--rule); }
     .portrait { margin: 0 auto 1.3rem; }
@@ -159,7 +166,7 @@
   </div>
   <figure class="portrait">
     <img src="assets/portrait.jpg" alt="Lekshmi Dinachandran"
-         onerror="this.onerror=null;this.src='https://blogs.otago.ac.nz/honoka-hauwai/files/2023/09/Lekshmi-scaled.jpeg'">
+         onerror="this.onerror=null;this.src='assets/img/prof_pic.jpg'">
     <figcaption>fig. 1 — the author</figcaption>
   </figure>
   <h1>Lekshmi Dinachandran</h1>
@@ -313,8 +320,68 @@
     <p>A decade of undergraduate engineering teaching — designing lecture notes, problem sets, lab manuals, and assessments from scratch, and running bridging programmes for under-prepared students. Currently lead first-year chemistry labs (CHEM 111/191) and contribute to the Chemistry Outreach Team at Otago.</p>
   </div>
   <div class="item">
+    <h3>Papers taught</h3>
+    <div class="meta">University of Kerala &amp; APJ Abdul Kalam Technological University (KTU) · lectures, tutorials &amp; labs · 2006–2016</div>
+    <div class="courses">
+      <div>
+        <h4>University of Kerala · 2002 scheme</h4>
+        <ul>
+          <li><span class="code">104</span>Engineering Graphics</li>
+          <li><span class="code">105</span>Engineering Mechanics</li>
+          <li><span class="code">M 203</span>Metallurgy &amp; Material Science</li>
+          <li><span class="code">M 205</span>Machine Drawing</li>
+          <li><span class="code">M 215</span>Kinematics of Machinery</li>
+          <li><span class="code">M 314</span>Computer-Aided Design (CAD)</li>
+          <li><span class="code">M 401</span>Principles of Management</li>
+        </ul>
+      </div>
+      <div>
+        <h4>University of Kerala · 2008 scheme</h4>
+        <ul>
+          <li><span class="code">08.104</span>Engineering Graphics</li>
+          <li><span class="code">08.105</span>Engineering Mechanics</li>
+          <li><span class="code">08.107</span>Basic Mechanical Engineering</li>
+          <li><span class="code">08.302</span>Mechanics of Structures</li>
+          <li><span class="code">08.303</span>Fluid Mechanics I <em>(Civil)</em></li>
+          <li><span class="code">08.303</span>Mechanics of Solids <em>(Mech)</em></li>
+          <li><span class="code">08.304</span>Thermodynamics</li>
+          <li><span class="code">08.305</span>Fluid Mechanics</li>
+          <li><span class="code">08.402</span>Metallurgy &amp; Material Science</li>
+          <li><span class="code">08.404</span>Fluid Mechanics II <em>(Civil)</em></li>
+          <li><span class="code">08.407</span>Strength of Materials Lab</li>
+          <li><span class="code">08.408</span>Fluid Mechanics Lab <em>(Civil)</em></li>
+          <li><span class="code">08.408</span>Fluid Mechanics &amp; Machines Lab <em>(Mech)</em></li>
+          <li><span class="code">08.502</span>Advanced Mechanics of Solids</li>
+          <li><span class="code">08.503</span>Kinematics of Machinery</li>
+          <li><span class="code">08.602</span>Dynamics of Machinery</li>
+          <li><span class="code">08.704</span>Computer-Aided Design &amp; Manufacturing</li>
+        </ul>
+      </div>
+      <div>
+        <h4>KTU · BTech</h4>
+        <ul>
+          <li><span class="code">BE100/110</span>Engineering Mechanics / Engineering Graphics</li>
+          <li><span class="code">BE101-02</span>Introduction to Mechanical Engineering Sciences</li>
+          <li><span class="code">ME202</span>Advanced Mechanics of Solids</li>
+          <li><span class="code">ME301</span>Mechanics of Machinery</li>
+          <li><span class="code">ME304</span>Dynamics of Machinery</li>
+          <li><span class="code">ME305</span>Computer Programming &amp; Numerical Methods (numerical methods)</li>
+        </ul>
+      </div>
+      <div>
+        <h4>KTU · MTech Thermal Engineering</h4>
+        <ul>
+          <li><span class="code">01ME6203</span>Advanced Heat Transfer</li>
+          <li><span class="code">01ME6204</span>Computational Fluid Dynamics (CFD)</li>
+          <li><span class="code">Elective</span>Solar Thermal Engineering</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note" style="margin-top:.8rem">Currently: CHEM 111 &amp; CHEM 191 laboratory teaching, University of Otago (2023–present).</p>
+  </div>
+  <div class="item">
     <h3>Sample course materials</h3>
-    <div class="meta">Developed for undergraduate engineering · Ridhima Publications materials adopted by 140+ institutions</div>
+    <div class="meta">Developed as part of undergraduate lecturing · University of Kerala</div>
     <p>Engineering mechanics — draft course notes written for undergraduate tutoring:
       <a href="teaching/engineering-mechanics-ch1.pdf">Fundamentals &amp; dynamics</a> ·
       <a href="teaching/engineering-mechanics-ch2.pdf">Dynamics</a> ·
